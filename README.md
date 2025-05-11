@@ -51,6 +51,7 @@ shoppingcart/
 ## Prerequisites
 
 - Java 21
+- MySQL 8
 - Gradle
 - Docker (for Kafka)
 
