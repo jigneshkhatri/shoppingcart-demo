@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "712ad6ff-72ca-4cc3-8872-eb425d3c3717",
+		"name": "ShoppingCart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28471099"
+	},
+	"item": [
+		{
+			"name": "Place new order",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deliveryAddress\": \"Godrej Garden City\",\r\n    \"orderItems\": [\r\n        {\r\n            \"productId\": 1,\r\n            \"quantity\": 10\r\n        }, {\r\n            \"productId\": 2,\r\n            \"quantity\": 7\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/order-service/orders/v1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order-service",
+						"orders",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

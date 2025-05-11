@@ -1,0 +1,18 @@
+package com.shoppingcart.inventory.dtos.response;
+
+import com.shoppingcart.inventory.enums.StatusCode;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
+ * @author Jigs
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class StatusDTO {
+
+    private StatusCode code;
+    private String message;
+}
